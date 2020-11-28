@@ -1,0 +1,20 @@
+<div class="col-md-4" *ngFor= "let pasajero of pasajeros">
+    <div class="card text-center">
+        <div class="card-header bg-dark text-white d-flex justify-content-between aling-items-center">
+
+            {{pasajero.title}}
+            <button class = "btn btn -danger"(click)= "deleteGame(pasajero.id)">
+            <buttton class="btn btn-dange">
+                <i class= "far fa-trash-alt"></i>>
+             
+                </buttton>>
+        </div>
+        <img src="{{pasajero.image}}" class= "card-image-top">
+        <div class="card-body">
+            <p>{{pasajero.description}}</p>
+            <a href="" class="btn btn-info btn-block">
+                EDITAR PASAJERO
+
+        </div>
+    </div>
+</div>
